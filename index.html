@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TKV EXIM PRIVATE LTD | Premium Global Exports</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts: Playfair Display for Luxury Headings, Plus Jakarta Sans for Modern Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #061611;
+            color: #F4EFEA;
+            overflow-x: hidden;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom Premium Gradients & Glows */
+        .bg-luxury-gradient {
+            background: linear-gradient(135deg, #040f0c 0%, #0c241b 50%, #163529 100%);
+        }
+        .text-gold-gradient {
+            background: linear-gradient(90deg, #F3E7C4 0%, #D4AF37 50%, #AA7C11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(12, 36, 27, 0.45);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        .glass-card:hover {
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.1);
+        }
+        /* Smooth Custom Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(3deg); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 0.4; }
+        }
+        .gold-glow {
+            position: absolute;
+            background: radial-gradient(circle, rgba(212,175,55,0.2) 0%, rgba(0,0,0,0) 70%);
+            animation: pulse-glow 4s ease-in-out infinite;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #040f0c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+            border-radius: 4px;
+        }
+        /* Smooth transitions */
+        .transition-premium {
+            transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+    </style>
+</head>
+<body class="selection:bg-yellow-600 selection:text-white">
+
+    <!-- Preloader Section -->
+    <div id="preloader" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#040f0c] transition-all duration-1000">
+        <div class="mb-4 text-4xl font-serif tracking-widest text-gold-gradient font-bold animate-pulse">TKV EXIM</div>
+        <div class="h-[2px] w-48 bg-emerald-950 overflow-hidden relative">
+            <div class="absolute h-full w-24 bg-[#D4AF37] top-0 left-[-50%] animate-[move_1.5s_infinite_linear]"></div>
+        </div>
+    </div>
+    <style>
+        @keyframes move {
+            0% { left: -50%; }
+            100% { left: 100%; }
+        }
+    </style>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-40 glass-card border-b border-white/5 px-6 lg:px-16 py-4 flex items-center justify-between">
+        <a href="#" class="font-serif text-2xl font-bold tracking-wider text-gold-gradient">
+            TKV EXIM<span class="text-xs block font-sans tracking-[0.3em] uppercase text-emerald-400">Private Ltd</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-8 text-sm uppercase tracking-widest font-medium">
+            <a href="#hero" class="hover:text-[#D4AF37] transition-colors text-emerald-400">Home</a>
+            <a href="#about" class="hover:text-[#D4AF37] transition-colors">About</a>
+            <a href="#categories" class="hover:text-[#D4AF37] transition-colors">Portfolios</a>
+            <a href="#showcase" class="hover:text-[#D4AF37] transition-colors">Products</a>
+            <a href="#global" class="hover:text-[#D4AF37] transition-colors">Global Network</a>
+            <a href="#sustainability" class="hover:text-[#D4AF37] transition-colors">Sustainability</a>
+        </div>
+        <a href="#contact" class="hidden lg:inline-block px-6 py-2.5 bg-gradient-to-r from-[#AA7C11] to-[#D4AF37] text-black font-semibold text-xs tracking-widest uppercase rounded-none hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-premium">
+            Exim Inquiry
+        </a>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-luxury-gradient">
+        <!-- Interactive Gold Glow Backgrounds -->
+        <div class="gold-glow w-[500px] h-[500px] top-[-10%] left-[-10%]"></div>
+        <div class="gold-glow w-[600px] h-[600px] bottom-[-20%] right-[-10%]"></div>
+
+        <!-- Background Video/Cinematic Image Layer -->
+        <div class="absolute inset-0 opacity-20 mix-blend-luminosity pointer-events-none">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1920" class="w-full h-full object-cover" alt="Global Trade background">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 w-full py-12">
+            <!-- Left Side Content -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-950/80 border border-emerald-500/30 text-emerald-400 text-xs font-semibold tracking-widest uppercase rounded-full">
+                    <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    Traditional Roots. Global Reach.
+                </div>
+                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-none text-white">
+                    From Nature <br>To <span class="text-gold-gradient">Global Markets</span>
+                </h1>
+                <p class="text-cream-white/70 max-w-xl text-base md:text-lg font-light leading-relaxed mx-auto lg:mx-0">
+                    TKV EXIM orchestrates a luxury trade matrix supplying premium agricultural bounties, sacred herbal extractions, organic plant fibers, and pure animal derivatives to sovereign international standard landscapes.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                    <a href="#showcase" class="px-8 py-4 bg-gradient-to-r from-[#D4AF37] to-[#AA7C11] text-black font-bold tracking-widest text-xs uppercase hover:scale-105 transition-premium shadow-lg">
+                        Explore Master Collection
+                    </a>
+                    <a href="#global" class="px-8 py-4 border border-white/20 bg-white/5 hover:bg-white/10 text-white font-bold tracking-widest text-xs uppercase hover:border-[#D4AF37] transition-premium">
+                        Export Worldwide
+                    </a>
+                </div>
+
+                <!-- Animated Statistics Counters -->
+                <div class="grid grid-cols-3 gap-6 pt-12 border-t border-white/10 max-w-lg mx-auto lg:mx-0">
+                    <div>
+                        <div class="font-serif text-3xl md:text-4xl font-bold text-[#D4AF37]">45+</div>
+                        <div class="text-[10px] uppercase tracking-widest text-white/50 mt-1">Destination Ports</div>
+                    </div>
+                    <div>
+                        <div class="font-serif text-3xl md:text-4xl font-bold text-[#D4AF37]">120+</div>
+                        <div class="text-[10px] uppercase tracking-widest text-white/50 mt-1">Elite Standard Products</div>
+                    </div>
+                    <div>
+                        <div class="font-serif text-3xl md:text-4xl font-bold text-[#D4AF37]">100%</div>
+                        <div class="text-[10px] uppercase tracking-widest text-white/50 mt-1">Sustainable Yields</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side Carousel/Hero Asset Display (3D Layered Look) -->
+            <div class="lg:col-span-5 relative flex justify-center items-center">
+                <div class="relative w-80 h-80 md:w-[450px] md:h-[450px] rounded-full border border-gold/10 flex items-center justify-center p-8 bg-gradient-to-b from-emerald-950/30 to-transparent">
+                    <!-- Rotating Visual Element Frame -->
+                    <div class="absolute inset-0 border border-dashed border-[#D4AF37]/20 rounded-full animate-[spin_40s_linear_infinite]"></div>
+                    
+                    <!-- Floating Main High-Value Image Asset -->
+                    <div class="w-full h-full rounded-full overflow-hidden border-2 border-[#D4AF37]/30 shadow-2xl relative animate-float group">
+                        <img id="hero-carousel-img" src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition-all duration-1000 scale-105" alt="Premium Agricultural Goods">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6 justify-center">
+                            <span id="hero-carousel-caption" class="font-serif text-lg tracking-widest text-[#F3E7C4] text-center font-semibold">Organic Coconuts & Derivatives</span>
+                        </div>
+                    </div>
+
+                    <!-- Decorative Floating Botanical Nodes -->
+                    <div class="absolute top-4 left-4 bg-emerald-900 border border-[#D4AF37]/40 p-3 rounded-full shadow-lg text-[#D4AF37] animate-bounce"><i class="fa-solid fa-leaf text-xl"></i></div>
+                    <div class="absolute bottom-10 right-4 bg-emerald-900 border border-[#D4AF37]/40 p-3 rounded-full shadow-lg text-[#D4AF37] animate-pulse"><i class="fa-solid fa-earth-americas text-xl"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-60">
+            <span class="text-[9px] uppercase tracking-[0.3em] text-[#F3E7C4]">Scroll To Discover</span>
+            <div class="w-[1px] h-10 bg-gradient-to-b from-[#D4AF37] to-transparent animate-pulse"></div>
+        </div>
+    </section>
+
+    <!-- 2. About Us Section -->
+    <section id="about" class="py-24 lg:py-32 bg-[#040f0c] relative border-t border-emerald-950">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-5 relative">
+                <div class="border-2 border-[#D4AF37]/20 p-3 relative bg-emerald-950/20">
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=800" class="w-full object-cover aspect-[4/5] grayscale hover:grayscale-0 transition-premium shadow-2xl" alt="Premium cultivation landscape">
+                    <div class="absolute -bottom-8 -right-8 glass-card p-6 border border-[#D4AF37]/30 max-w-[220px] hidden md:block">
+                        <p class="font-serif text-3xl font-bold text-[#D4AF37]">Eco Certified</p>
+                        <p class="text-[11px] uppercase tracking-wider text-white/60 mt-1">Global Trade Assured Quality Matrix</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-7 space-y-8">
+                <div class="text-xs uppercase tracking-[0.4em] text-[#D4AF37] font-semibold">The Sovereign Standard</div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-white leading-tight">Synergizing Traditional Heritage Agriculture With High-Capacity Export Architecture</h2>
+                <p class="text-white/70 leading-relaxed font-light">
+                    TKV EXIM PRIVATE LTD stands as an internationally acclaimed multi-sector export powerhouse. We bridge generational agrarian stewardship with ultra-modern processing science to export absolute purity across international boundaries.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                    <div class="glass-card p-6 transition-premium group">
+                        <div class="w-12 h-12 bg-emerald-950 border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] text-xl mb-4 group-hover:bg-[#D4AF37] group-hover:text-black transition-premium">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3 class="font-serif text-lg font-bold mb-2 text-white">Value-Added Production</h3>
+                        <p class="text-xs text-white/60 leading-relaxed">Processing raw materials into high-yield, nutrient-dense derivatives customized for international distribution channels.</p>
+                    </div>
+                    <div class="glass-card p-6 transition-premium group">
+                        <div class="w-12 h-12 bg-emerald-950 border border-[#D4AF37]/30 flex items-center justify-center text-[#D4AF37] text-xl mb-4 group-hover:bg-[#D4AF37] group-hover:text-black transition-premium">
+                            <i class="fa-solid fa-boxes-packing"></i>
+                        </div>
+                        <h3 class="font-serif text-lg font-bold mb-2 text-white">Ethical Global Logistics</h3>
+                        <p class="text-xs text-white/60 leading-relaxed">Systematic freshness monitoring from certified processing estates directly to major international oceanic hubs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Product Categories Section -->
+    <section id="categories" class="py-24 bg-luxury-gradient relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16">
+            <div class="text-center max-w-2xl mx-auto mb-20 space-y-4">
+                <span class="text-xs uppercase tracking-[0.4em] text-[#D4AF37] font-semibold">Curated Portfolios</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-white">Exquisite Trade Portfolios</h2>
+                <div class="w-24 h-[1px] bg-[#D4AF37] mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Cat 1 -->
+                <div class="glass-card overflow-hidden group relative transition-premium flex flex-col justify-between h-96">
+                    <div class="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity">
+                        <img src="https://images.unsplash.com/photo-1574325131876-a7999d12a6f8?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Agri products portfolio">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#040f0c] via-black/40 to-transparent"></div>
+                    <div class="relative z-10 p-6 pt-12 text-xs uppercase tracking-widest text-[#D4AF37]">Portfolio 01</div>
+                    <div class="relative z-10 p-6 space-y-2">
+                        <h3 class="font-serif text-2xl font-bold text-white">Agricultural Products</h3>
+                        <p class="text-xs text-white/60 line-clamp-2">Premium grains, traditional rices, high-grade cash fibers, and pure subcontinental spices.</p>
+                        <a href="#showcase" class="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-[#D4AF37] pt-2 font-semibold">View Catalog <i class="fa-solid fa-arrow-right-long text-[10px]"></i></a>
+                    </div>
+                </div>
+                <!-- Cat 2 -->
+                <div class="glass-card overflow-hidden group relative transition-premium flex flex-col justify-between h-96">
+                    <div class="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity">
+                        <img src="https://images.unsplash.com/photo-1608889174637-3c44f6326f20?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Herbal solutions portfolio">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#040f0c] via-black/40 to-transparent"></div>
+                    <div class="relative z-10 p-6 pt-12 text-xs uppercase tracking-widest text-[#D4AF37]">Portfolio 02</div>
+                    <div class="relative z-10 p-6 space-y-2">
+                        <h3 class="font-serif text-2xl font-bold text-white">Herbal Products</h3>
+                        <p class="text-xs text-white/60 line-clamp-2">Bio-active wellness leaves, rich organic extractions, and potent medicinal botanicals.</p>
+                        <a href="#showcase" class="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-[#D4AF37] pt-2 font-semibold">View Catalog <i class="fa-solid fa-arrow-right-long text-[10px]"></i></a>
+                    </div>
+                </div>
+                <!-- Cat 3 -->
+                <div class="glass-card overflow-hidden group relative transition-premium flex flex-col justify-between h-96">
+                    <div class="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb18865?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Plant-based raw fibers">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#040f0c] via-black/40 to-transparent"></div>
+                    <div class="relative z-10 p-6 pt-12 text-xs uppercase tracking-widest text-[#D4AF37]">Portfolio 03</div>
+                    <div class="relative z-10 p-6 space-y-2">
+                        <h3 class="font-serif text-2xl font-bold text-white">Plant Products</h3>
+                        <p class="text-xs text-white/60 line-clamp-2">Structural banana fibers, high-durability bamboo, eco-industrial neem, and organic vetiver root.</p>
+                        <a href="#showcase" class="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-[#D4AF37] pt-2 font-semibold">View Catalog <i class="fa-solid fa-arrow-right-long text-[10px]"></i></a>
+                    </div>
+                </div>
+                <!-- Cat 4 -->
+                <div class="glass-card overflow-hidden group relative transition-premium flex flex-col justify-between h-96">
+                    <div class="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity">
+                        <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Animal products and wild honey">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#040f0c] via-black/40 to-transparent"></div>
+                    <div class="relative z-10 p-6 pt-12 text-xs uppercase tracking-widest text-[#D4AF37]">Portfolio 04</div>
+                    <div class="relative z-10 p-6 space-y-2">
+                        <h3 class="font-serif text-2xl font-bold text-white">Animal Products</h3>
+                        <p class="text-xs text-white/60 line-clamp-2">Wild apiary honey, organic honeycomb wax, unpasteurized premium milk solids, and premium raw silks.</p>
+                        <a href="#showcase" class="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-[#D4AF37] pt-2 font-semibold">View Catalog <i class="fa-solid fa-arrow-right-long text-[10px]"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Deep Product Showcase Section -->
+    <section id="showcase" class="py-24 bg-[#040f0c] relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+                <div class="space-y-4">
+                    <span class="text-xs uppercase tracking-[0.4em] text-[#D4AF37] font-semibold">The Vault Collection</span>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-white">Signature Trade Commodities</h2>
+                </div>
+                <div class="flex flex-wrap gap-2 text-xs uppercase tracking-wider font-semibold">
+                    <button class="px-4 py-2 bg-[#D4AF37] text-black">All Sectors</button>
+                    <button class="px-4 py-2 bg-emerald-950/50 border border-white/10 hover:border-[#D4AF37] text-white">Agricultural</button>
+                    <button class="px-4 py-2 bg-emerald-950/50 border border-white/10 hover:border-[#D4AF37] text-white">Plant-Based</button>
+                    <button class="px-4 py-2 bg-emerald-950/50 border border-white/10 hover:border-[#D4AF37] text-white">Animal Derivatives</button>
+                </div>
+            </div>
+
+            <!-- Product Showcase Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="glass-card group p-4 border border-white/5 relative flex flex-col justify-between">
+                    <div class="overflow-hidden relative aspect-[4/3] bg-emerald-950/40 mb-6">
+                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 mix-blend-lighten" alt="Premium Long Grain Rice">
+                        <div class="absolute top-3 left-3 px-2 py-1 bg-black/60 border border-[#D4AF37]/40 text-[#D4AF37] text-[9px] uppercase tracking-widest font-bold">A-Grade Agri</div>
+                    </div>
+                    <div class="space-y-4 flex-1">
+                        <h3 class="font-serif text-2xl font-bold text-white tracking-wide">Premium Long-Grain Rice</h3>
+                        <div class="h-[1px] w-full bg-white/10"></div>
+                        <div class="grid grid-cols-2 gap-y-3 gap-x-2 text-[11px] text-white/70">
+                            <div><span class="block text-[9px] uppercase text-[#D4AF37] tracking-wider">Primary Use</span> Culinary / Flour Formulations</div>
+                            <div><span class="block text-[9px] uppercase text-[#D4AF37] tracking-wider">Export Markets</span> EU, Middle East, USA</div>
+                            <div><span class="block text-[9px] uppercase text-[#D4AF37] tracking-wider">By-Products</span> Bran Oil, Husk Biomass</div>
+                            <div><span class="block text-[9px] uppercase text-[#D4AF37] tracking-wider">Sustainability</span> Methane-Reduced Farming</div>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <button class="w-full py-3 bg-emerald-950 border border-[#D4AF37]/20 group-hover:border-[#D4AF37] text-xs font-bold uppercase tracking-widest text-[#D4AF37] group-hover:bg-[#D4AF37] group-hover:text-black transition-premium">Request Technical Sheet</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="glass-card group p-4 border border-white/5 relative flex flex-col justify-between">
+                    <div class="overflow-hidden relative aspect-[4/3] bg-emerald-950/40 mb-6">
+                        <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 mix-blend-lighten" alt="Organic Banana Fiber">
+                        <div class="absolute top-3 left-3 px-2 py-1 bg-black/60 border border-[#D4AF37]/40 text-[#D4AF37] text-[9px] uppercase tracking-widest font-bold">Organic Plant Fiber</div>
+                    </div>
+                    <div class="space-y-4 flex-1">
+                        <h3 class="font-serif text-2xl font-bold text-white tracking-wide">High-Tensile Banana Fiber</h3>
+                        <div class="h-[1px] w-full bg-white/10"></div>
+                        <div class="grid grid-cols-2 gap-y-3 gap-x-2 text-[11px] text-white/70">
+                            <div><span class="block text-[9px] uppercase text-[#D4AF37] tracking-wider">Primary Use</span> Luxury Textiles, Paper</div>
+                            <div><span class="block text-[9px] uppercase text-[#D4AF37] tracking-wider">Export Markets</span> Japan, Germany, France</div>
+                            <div><span class="block text-[9px] uppercase text-[#D4AF37] tracking-wider">By-Products</span> Organic Potash Fertilizer</div>
+                            <div><span class="block text-[9px] uppercase text-[#D4AF37] tracking-wider">Sustainability</span> 100% Zero-Waste Output</div>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <button class="w-full py-3 bg-emerald-950 border border-[#D4AF37]/20 group-hover:border-[#D4AF37] text-xs font-bold uppercase tracking-widest text-[#D4AF37] group-hover:bg-[#D4AF37] group-hover:text-black transition-premium">Request Technical Sheet</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="glass-card group p-4 border border-white/5 relative flex flex-col justify-between">
+                    <div class="overflow-hidden relative aspect-[4/3] bg-emerald-950/40 mb-6">
+                        <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 mix-blend-lighten" alt="Pure Apiary Honey">
+                        <div class="absolute top-3 left-3 px-2 py-1 bg-black/60 border border-[#D4AF37]/40 text-[#D4AF37] text-[9px] uppercase tracking-widest font-bold">Pure Animal Product</div>
+                    </div>
+                    <div class="space-y-4 flex-1">
+                        <h3 class="font-serif text-2xl font-bold text-white tracking-wide">Wild Raw Forest Honey</h3>
+                        <div class="h-[1px] w-full bg-white/10"></div>
+                        <div class="grid grid-cols-2 gap-y-3 gap-x-2 text-[11px] text-white/70">
+                            <div><span class="block text-[9px] uppercase text-[#D4AF37] tracking-wider">Primary Use</span> Nutraceuticals, Luxury Food</div>
+                            <div><span class="block text-[9px] uppercase text-[#D4AF37] tracking-wider">Export Markets</span> UK, Singapore, UAE</div>
+                            <div><span class="block text-[9px] uppercase text-[#D4AF37] tracking-wider">By-Products</span> Organic Beeswax Matrices</div>
+                            <div><span class="block text-[9px] uppercase text-[#D4AF37] tracking-wider">Sustainability</span> Cruelty-Free Harvesting</div>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/5">
+                        <button class="w-full py-3 bg-emerald-950 border border-[#D4AF37]/20 group-hover:border-[#D4AF37] text-xs font-bold uppercase tracking-widest text-[#D4AF37] group-hover:bg-[#D4AF37] group-hover:text-black transition-premium">Request Technical Sheet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Export & Global Trade Logistics Section -->
+    <section id="global" class="py-24 bg-luxury-gradient relative overflow-hidden">
+        <div class="gold-glow w-[600px] h-[600px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-16 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-xs uppercase tracking-[0.4em] text-[#D4AF37] font-semibold">Global Distribution Matrix</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-white">Sovereign Supply Infrastructure</h2>
+                <p class="text-xs text-white/60">Flawless execution via global maritime freight and air-cargo distribution pathways.</p>
+            </div>
+
+            <!-- Interlinked Tech Display Panels -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="glass-card p-8 border border-white/5 space-y-4">
+                    <div class="text-4xl text-[#D4AF37]"><i class="fa-solid fa-ship"></i></div>
+                    <h3 class="font-serif text-xl font-bold text-white">Ocean Intermodal Transit</h3>
+                    <p class="text-xs text-white/60 leading-relaxed">Secured deep-sea shipping contracts utilizing climate-regulated container units guaranteeing cargo stasis across transoceanic commercial lanes.</p>
+                </div>
+                <div class="glass-card p-8 border border-white/5 space-y-4 lg:-translate-y-4 bg-emerald-950/40">
+                    <div class="text-4xl text-[#D4AF37]"><i class="fa-solid fa-plane-departure"></i></div>
+                    <h3 class="font-serif text-xl font-bold text-white">Priority Express Air Cargo</h3>
+                    <p class="text-xs text-white/60 leading-relaxed">Expedited temperature-critical flight configurations for fragile botanical extractions, live plant nodes, and luxury organic animal serums.</p>
+                </div>
+                <div class="glass-card p-8 border border-white/5 space-y-4">
+                    <div class="text-4xl text-[#D4AF37]"><i class="fa-solid fa-passport"></i></div>
+                    <h3 class="font-serif text-xl font-bold text-white">Sovereign Customs Compliance</h3>
+                    <p class="text-xs text-white/60 leading-relaxed">Streamlined legal clearance through phytosanitary verification protocols ensuring pristine regulatory alignment at destination harbors.</p>
+                </div>
+            </div>
+
+            <!-- World Map Conceptual Area -->
+            <div class="mt-16 border border-white/10 p-4 bg-[#040f0c]/80 aspect-[21/9] flex items-center justify-center relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=1200" class="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-overlay group-hover:scale-105 transition-transform duration-1000" alt="World map overlay">
+                <div class="text-center relative z-10 space-y-2">
+                    <div class="text-xs uppercase tracking-[0.5em] text-[#D4AF37] font-bold"><i class="fa-solid fa-circle-dot text-emerald-500 animate-ping mr-2"></i>Live Global Network Active</div>
+                    <p class="font-serif text-xl text-white/90 font-light">Connecting South Asian Production Estates to Western, Middle Eastern, & Asia-Pacific Trade Ports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Sustainability Matrix Section -->
+    <section id="sustainability" class="py-24 bg-[#040f0c] relative border-t border-emerald-950/60">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-6 space-y-6">
+                <span class="text-xs uppercase tracking-[0.4em] text-emerald-400 font-semibold">Regenerative Commerce</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-white">Targeting Zero-Waste Via Industrial By-Product Transformation</h2>
+                <p class="text-white/70 text-sm leading-relaxed">
+                    TKV EXIM operates with circular corporate ethics. Every element from raw harvest is optimized. Our processing operations run on regional biomass energy metrics, ensuring our global export carbon path stays minimal.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div class="text-emerald-400 mt-1"><i class="fa-solid fa-circle-check"></i></div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Closed-Loop Agronomic Extraction</h4>
+                            <p class="text-xs text-white/50">Processing residues are consistently converted into secondary commercial commodities, completely eliminating local landfill strain.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="text-emerald-400 mt-1"><i class="fa-solid fa-circle-check"></i></div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Phytochemical Integrity Security</h4>
+                            <p class="text-xs text-white/50">100% synthetic chemical exclusion arrays are observed across our entire agricultural network.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                <div class="p-6 bg-emerald-950/30 border border-emerald-500/10 flex flex-col justify-between aspect-square">
+                    <div class="text-3xl text-emerald-400"><i class="fa-solid fa-solar-panel"></i></div>
+                    <div>
+                        <h4 class="font-serif text-lg font-bold text-white">Green Processing Estates</h4>
+                        <p class="text-[11px] text-white/60 mt-1">Solar & biomass energy systems power our refining facilities.</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-emerald-950/30 border border-emerald-500/10 flex flex-col justify-between aspect-square translate-y-6">
+                    <div class="text-3xl text-emerald-400"><i class="fa-solid fa-recycle"></i></div>
+                    <div>
+                        <h4 class="font-serif text-lg font-bold text-white">Circular Resource Yield</h4>
+                        <p class="text-[11px] text-white/60 mt-1">Transforming fiber waste into luxury bio-degradable components.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Premium Client Testimonials -->
+    <section class="py-24 bg-luxury-gradient relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16">
+            <div class="text-center max-w-2xl mx-auto mb-20 space-y-4">
+                <span class="text-xs uppercase tracking-[0.4em] text-[#D4AF37] font-semibold">Global Validation</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-white">International Corporate Appraisals</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 border border-white/5 flex flex-col justify-between h-72">
+                    <div class="text-amber-400 text-sm flex gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-xs text-white/80 leading-relaxed italic">"The strict consistency of TKV EXIM's organic long-grain shipments is unmatched. Their customized packaging architecture ensures pristine delivery across every maritime cycle."</p>
+                    <div class="border-t border-white/10 pt-4">
+                        <div class="font-serif text-sm font-bold text-white">Herr Heinrich Vance</div>
+                        <div class="text-[10px] text-[#D4AF37] uppercase tracking-wider">Director of Imports, Global Foods GmbH</div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card p-8 border border-white/5 flex flex-col justify-between h-72 bg-emerald-950/30">
+                    <div class="text-amber-400 text-sm flex gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-xs text-white/80 leading-relaxed italic">"Our luxury fashion formulations rely entirely on high-tensile organic plant fibers. TKV EXIM consistently delivers premium raw stocks that pass our rigorous laboratory checks."</p>
+                    <div class="border-t border-white/10 pt-4">
+                        <div class="font-serif text-sm font-bold text-white">Aiko Tanaka</div>
+                        <div class="text-[10px] text-[#D4AF37] uppercase tracking-wider">Senior Procurement, Tokyo Heritage Textiles</div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-card p-8 border border-white/5 flex flex-col justify-between h-72">
+                    <div class="text-amber-400 text-sm flex gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-xs text-white/80 leading-relaxed italic">"Their pharmaceutical botanical extractions have significantly elevated our product reliability. Their transparent logistics and full phytosanitary documentation are highly professional."</p>
+                    <div class="border-t border-white/10 pt-4">
+                        <div class="font-serif text-sm font-bold text-white">Dr. Tariq Al-Mansoor</div>
+                        <div class="text-[10px] text-[#D4AF37] uppercase tracking-wider">Chief Officer, Emirate Bio-Nutraceuticals</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Premium Gallery Matrix -->
+    <section class="py-24 bg-[#040f0c] relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-xs uppercase tracking-[0.4em] text-[#D4AF37] font-semibold">Visual Estate</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-white">Estate Operational Chronicles</h2>
+            </div>
+
+            <!-- Mosaic Masonry Layout -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="relative overflow-hidden group aspect-[3/4] bg-emerald-950">
+                    <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb18865?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Herbal cultivation">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-4 left-4 font-serif text-sm text-white font-semibold">Herbal Sanctum Estates</div>
+                </div>
+                <div class="relative overflow-hidden group aspect-[3/4] bg-emerald-950 lg:translate-y-6">
+                    <img src="https://images.unsplash.com/photo-1574325131876-a7999d12a6f8?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Agriculture refining">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-4 left-4 font-serif text-sm text-white font-semibold">High-Capacity Agri Refining</div>
+                </div>
+                <div class="relative overflow-hidden group aspect-[3/4] bg-emerald-950">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Ocean shipping logistics">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-4 left-4 font-serif text-sm text-white font-semibold">Ocean Fleet Standard Export</div>
+                </div>
+                <div class="relative overflow-hidden group aspect-[3/4] bg-emerald-950 lg:translate-y-6">
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" alt="Sustainable packing">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-4 left-4 font-serif text-sm text-white font-semibold">Sustainable Packing Facilities</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Contact & Export Inquiry Section -->
+    <section id="contact" class="py-24 bg-luxury-gradient relative border-t border-emerald-950">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            
+            <!-- Left Info Pane -->
+            <div class="lg:col-span-5 space-y-8">
+                <div class="space-y-4">
+                    <span class="text-xs uppercase tracking-[0.4em] text-[#D4AF37] font-semibold">Corporate Gateway</span>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-white">Initiate Global Procurement</h2>
+                    <p class="text-white/70 text-xs leading-relaxed">Connect with our dedicated logistics desk for verified specifications, customs routing arrangements, and comprehensive trade volume scheduling.</p>
+                </div>
+                
+                <div class="space-y-4 text-xs tracking-wider">
+                    <div class="flex items-center gap-4 p-4 bg-emerald-950/40 border border-white/5">
+                        <div class="text-[#D4AF37] text-lg w-8"><i class="fa-solid fa-building-flag"></i></div>
+                        <div>
+                            <span class="block text-[9px] uppercase text-white/40">Registered Sovereign Office</span>
+                            <span class="text-white/90">TKV EXIM PRIVATE LTD, Trade Tower Hub, Coimbatore, Tamil Nadu, India.</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 bg-emerald-950/40 border border-white/5">
+                        <div class="text-[#D4AF37] text-lg w-8"><i class="fa-solid fa-envelope-open-text"></i></div>
+                        <div>
+                            <span class="block text-[9px] uppercase text-white/40">Secure Communications</span>
+                            <span class="text-white/90">trade@tkvexim.com | logistics@tkvexim.com</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 bg-emerald-950/40 border border-white/5">
+                        <div class="text-[#D4AF37] text-lg w-8"><i class="fa-solid fa-phone-volume"></i></div>
+                        <div>
+                            <span class="block text-[9px] uppercase text-white/40">Brokerage Desk Access</span>
+                            <span class="text-white/90">+91 (422) 4950-XXXX / +91 98765 XXXXX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Form Card -->
+            <div class="lg:col-span-7 bg-[#040f0c] border border-[#D4AF37]/20 p-8 shadow-2xl relative">
+                <h3 class="font-serif text-2xl font-bold text-white mb-6">Global Procurement Form</h3>
+                <form class="space-y-6 text-xs">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="uppercase tracking-widest text-white/60">Corporate Representative Name</label>
+                            <input type="text" required class="w-full bg-emerald-950/50 border border-white/10 focus:border-[#D4AF37] p-3 text-white outline-none transition-colors" placeholder="e.g., Lord Harrison Vance">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="uppercase tracking-widest text-white/60">Official Enterprise Email</label>
+                            <input type="email" required class="w-full bg-emerald-950/50 border border-white/10 focus:border-[#D4AF37] p-3 text-white outline-none transition-colors" placeholder="e.g., vance@globalfoods.de">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="uppercase tracking-widest text-white/60">Target Sectors of Interest</label>
+                            <select class="w-full bg-emerald-950/50 border border-white/10 focus:border-[#D4AF37] p-3 text-white/80 outline-none transition-colors">
+                                <option class="bg-emerald-950">Select Trade Classification...</option>
+                                <option class="bg-emerald-950">Agricultural Infrastructure</option>
+                                <option class="bg-emerald-950">Bio-Herbal Extractions</option>
+                                <option class="bg-emerald-950">Plant Raw Materials</option>
+                                <option class="bg-emerald-950">Animal Derivatives Network</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="uppercase tracking-widest text-white/60">Destination Port / Country</label>
+                            <input type="text" required class="w-full bg-emerald-950/50 border border-white/10 focus:border-[#D4AF37] p-3 text-white outline-none transition-colors" placeholder="e.g., Port of Hamburg, Germany">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="uppercase tracking-widest text-white/60">Comprehensive Logistics Manifesto</label>
+                        <textarea rows="4" required class="w-full bg-emerald-950/50 border border-white/10 focus:border-[#D4AF37] p-3 text-white outline-none transition-colors resize-none" placeholder="Detail metric ton volume requests, purity standards required, and scheduled dispatch timelines..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 bg-gradient-to-r from-[#AA7C11] to-[#D4AF37] text-black font-bold uppercase tracking-widest hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-premium">Dispatch Sovereign Manifesto</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 10. Luxury Footer Design -->
+    <footer class="bg-[#030a08] border-t border-[#D4AF37]/30 text-xs font-light tracking-wide text-white/60">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div class="space-y-4">
+                <a href="#" class="font-serif text-2xl font-bold tracking-wider text-gold-gradient block">TKV EXIM</a>
+                <p class="leading-relaxed text-white/40 text-[11px]">Deploying premium subcontinental agricultural resources, bio-active plant matter, and raw animal extractions across specialized destination hubs globally.</p>
+                <div class="flex gap-4 text-sm text-[#D4AF37]">
+                    <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="space-y-3">
+                <h4 class="font-serif text-sm font-semibold text-white tracking-wider uppercase border-b border-[#D4AF37]/20 pb-2">Export Portfolios</h4>
+                <ul class="space-y-2 text-[11px]">
+                    <li><a href="#showcase" class="hover:text-[#D4AF37] transition-colors">Long Grain Cereals & Grains</a></li>
+                    <li><li><a href="#showcase" class="hover:text-[#D4AF37] transition-colors">Bio-Active Herbal Materials</a></li>
+                    <li><a href="#showcase" class="hover:text-[#D4AF37] transition-colors">High-Tensile Plant Fiber Stocks</a></li>
+                    <li><a href="#showcase" class="hover:text-[#D4AF37] transition-colors">Pure Apiary Honey Matrix</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="font-serif text-sm font-semibold text-white tracking-wider uppercase border-b border-[#D4AF37]/20 pb-2">Operational Protocol</h4>
+                <ul class="space-y-2 text-[11px]">
+                    <li><a href="#" class="hover:text-[#D4AF37] transition-colors">Phytosanitary Verification Labs</a></li>
+                    <li><a href="#" class="hover:text-[#D4AF37] transition-colors">Maritime Custom Compliance</a></li>
+                    <li><a href="#" class="hover:text-[#D4AF37] transition-colors">Cold Chain Traceability Index</a></li>
+                    <li><a href="#" class="hover:text-[#D4AF37] transition-colors">Regenerative Circular Farming</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="font-serif text-sm font-semibold text-white tracking-wider uppercase border-b border-[#D4AF37]/20 pb-2">Global Digest</h4>
+                <p class="text-[11px] text-white/40">Subscribe to our sovereign market analytics report for structural trade forecasting updates.</p>
+                <div class="flex border border-white/10 bg-emerald-950/20">
+                    <input type="email" class="w-full bg-transparent p-2 outline-none text-white text-[11px]" placeholder="corporate@email.com">
+                    <button class="bg-[#D4AF37] text-black px-4 font-bold uppercase"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/5 py-6 bg-[#020706] text-center text-[10px] uppercase tracking-widest text-white/30">
+            &copy; 2026 TKV EXIM PRIVATE LTD. All Sovereign Trading Rights Reserved. Designed for Supreme International Logistics.
+        </div>
+    </footer>
+
+    <!-- Interactive Hero Carousel JavaScript Engine -->
+    <script>
+        // Remove Preloader smoothly when fully loaded
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            preloader.classList.add('opacity-0', 'pointer-events-none');
+        });
+
+        // Dynamic High-Value Visual Content Matrix
+        const matrixAssets = [
+            {
+                img: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&q=80&w=800",
+                caption: "Organic Coconuts & Derivatives"
+            },
+            {
+                img: "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=800",
+                caption: "Premium A-Grade Rice Shipments"
+            },
+            {
+                img: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&q=80&w=800",
+                caption: "Wild Forest Honey & Bee Products"
+            },
+            {
+                img: "https://images.unsplash.com/photo-1608889174637-3c44f6326f20?auto=format&fit=crop&q=80&w=800",
+                caption: "Bio-Active Extractions & Herbal Assets"
+            }
+        ];
+
+        let stateIndex = 0;
+        const targetImage = document.getElementById('hero-carousel-img');
+        const targetCaption = document.getElementById('hero-carousel-caption');
+
+        setInterval(() => {
+            stateIndex = (stateIndex + 1) % matrixAssets.length;
+            
+            // Execute premium fading transitions smoothly
+            targetImage.style.opacity = '0';
+            targetCaption.style.opacity = '0';
+            
+            setTimeout(() => {
+                targetImage.src = matrixAssets[stateIndex].img;
+                targetCaption.textContent = matrixAssets[stateIndex].caption;
+                targetImage.style.opacity = '1';
+                targetCaption.style.opacity = '1';
+            }, 1000);
+            
+        }, 5000);
+    </script>
+</body>
+</html>
